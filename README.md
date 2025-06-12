@@ -1,2 +1,41 @@
-# BugManager
-一个企业级内网漏洞管理系统，使用flask蓝图+HTML+CSS+JavaScript+Mongodb
+# 目录
+
+- downloads 网页的下载目录，包含每周的扫描表和分离后的白名单和非白名单
+- log 处理日志，包含每周从 TVM 爬取到的原始数据
+- models 代码中的数据模型，提供基础的数据处理方法
+  - data_model 数据库中的漏洞数据模型，提供了数据的增删改查等方法，过程中可能会调用一些 utils 中的工具
+  - file_model 文件模型，提供了文件处理的基础后端函数，获取文件目录，删除文件等
+- routes flask 路由层，js 中调用的函数实现
+  - file 文件处理页面的一些路由(index.html)
+  - main 数据库管理页面的路由(data.html)
+- static css 和 js 的实现
+  - css css 装饰器
+    - base index 和 data 页面公用的 css
+    - data-table data 使用的 css
+    - file-manager index 页面使用的 css
+  - js JavaScript 代码实现
+    - data-table data 页面的 js
+    - file-manager index 页面的 js
+    - main js 总入口(其实没用到)
+    - utils data 和 index 页面都用的通用工具类 js
+- templates 前端的 html 页面
+  - data 数据库管理页面
+  - index 文件处理页面(刚进入时的主页面)
+- tmp 临时存储，在发邮件时临时生成附件等用途
+- uploads 上传目录，用户上传的文件在此目录下。主要是白名单和区域漏洞负责人，用于在二者发生变更时进行更新
+- utils 工具类函数
+  - data_mail_utils 发送邮件相关函数
+  - excel_process 和 excel_process_init 白名单分离时相关函数，主要包括判别、在原始数据上添加新列等功能
+  - file_utils 文件处理工具(对文件名进行分割用于判断文件是否合法)
+  - get_week 算出当前是本月第几周，如 2025_4W1，表示 2025 年 4 月第一周，log 生成时就用到了这个函数
+  - has_been_recorded 一个没用的模块。。。
+  - mongodb_connect 连接 mongo 数据库
+- \_\_init\_\_程序初始化
+- app\.py 程序总入口
+- config 一些全局变量配置
+  - 一些很明显的变量不做过多解释
+  - CURRENT_FOLDER = 'downloads' 在 index 页面提供了切换文件夹按钮，用于把当前视图在 downloads 和 uploads 之间切换，这个配置就是为了实现这个功能
+  - MONGODB_SETTINGS 连接数据库的配置，包括数据库名、用户名、主机名、端口号等
+  - MAIL_CONFIG 与发送邮件相关配置
+    - 使用公网邮箱
+    - 使用时记得检查 CONTENT

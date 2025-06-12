@@ -1,0 +1,395 @@
+[2025-05-30 10:29:24 +0800] [810679] [INFO] Starting gunicorn 23.0.0
+[2025-05-30 10:29:24 +0800] [810679] [INFO] Listening at: http://0.0.0.0:5000 (810679)
+[2025-05-30 10:29:24 +0800] [810679] [INFO] Using worker: sync
+[2025-05-30 10:29:24 +0800] [810680] [INFO] Booting worker with pid: 810680
+[2025-05-30 10:29:24 +0800] [810681] [INFO] Booting worker with pid: 810681
+[2025-05-30 10:29:24 +0800] [810682] [INFO] Booting worker with pid: 810682
+[2025-05-30 10:29:24 +0800] [810683] [INFO] Booting worker with pid: 810683
+[2025-05-30 16:09:34 +0800] [810679] [ERROR] Worker (pid:810682) was sent SIGHUP!
+[2025-05-30 16:09:34 +0800] [810679] [ERROR] Worker (pid:810683) was sent SIGHUP!
+[2025-05-30 16:09:34 +0800] [810679] [ERROR] Worker (pid:810681) was sent SIGHUP!
+[2025-05-30 16:09:34 +0800] [811355] [INFO] Booting worker with pid: 811355
+[2025-05-30 16:09:34 +0800] [810679] [ERROR] Worker (pid:810680) was sent SIGHUP!
+[2025-05-30 16:09:34 +0800] [811356] [INFO] Booting worker with pid: 811356
+[2025-05-30 16:09:34 +0800] [810679] [INFO] Handling signal: hup
+[2025-05-30 16:09:34 +0800] [810679] [INFO] Hang up: Master
+[2025-05-30 16:09:34 +0800] [811358] [INFO] Booting worker with pid: 811358
+[2025-05-30 16:09:34 +0800] [811360] [INFO] Booting worker with pid: 811360
+[2025-05-30 16:09:34 +0800] [811361] [INFO] Booting worker with pid: 811361
+[2025-05-30 16:09:34 +0800] [811359] [INFO] Booting worker with pid: 811359
+[2025-05-30 16:09:35 +0800] [811356] [INFO] Worker exiting (pid: 811356)
+[2025-05-30 16:09:35 +0800] [811355] [INFO] Worker exiting (pid: 811355)
+[2025-05-30 16:09:35 +0800] [810679] [ERROR] Worker (pid:811355) was sent SIGTERM!
+[2025-05-30 18:11:38 +0800] [811361] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: ''
+[2025-05-30 18:11:38 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'RTSP/1.0'
+[2025-05-30 18:11:43 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nnnn'
+[2025-05-30 18:11:53 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: 'HELP'
+[2025-05-30 18:12:03 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'SIP/2.0'
+[2025-05-30 18:12:08 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP method: '\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\ngoogle.com\x00PGET'
+[2025-05-30 18:12:32 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'TRANSFER-ENCODING'
+[2025-05-30 18:12:32 +0800] [811361] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'TRANSFER-ENCODING'
+[2025-05-30 18:12:34 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'cgi-bin/loadpage.cgi?user_id=1&file=../../../../../../etc/passwd HTTP/1.1'
+[2025-05-30 18:12:38 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'REFERER'
+[2025-05-30 18:12:44 +0800] [811360] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'REFERER'
+[2025-05-30 18:12:49 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: '% base64_str HTTP/1.0'
+[2025-05-30 18:12:51 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP header name: 'Content-Length '
+[2025-05-30 23:00:43 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP request line: ''
+[2025-05-30 23:00:43 +0800] [811361] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP Version: 'RTSP/1.0'
+[2025-05-30 23:00:48 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nnnn'
+[2025-05-30 23:00:58 +0800] [811361] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP request line: 'HELP'
+[2025-05-30 23:01:08 +0800] [811358] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP Version: 'SIP/2.0'
+[2025-05-30 23:01:13 +0800] [811358] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP method: '\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\ngoogle.com\x00PGET'
+[2025-05-30 23:04:33 +0800] [811361] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP Header: 'REFERER'
+[2025-05-30 23:04:35 +0800] [811359] [WARNING] Invalid request from ip=192.168.31.128: Invalid HTTP Version: '% base64_str HTTP/1.1'
+[2025-05-30 23:05:06 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:811360)
+[2025-05-30 23:05:06 +0800] [811360] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/home/rooot/.local/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-05-30 23:05:06 +0800] [811360] [INFO] Worker exiting (pid: 811360)
+[2025-05-30 23:05:07 +0800] [812298] [INFO] Booting worker with pid: 812298
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:22:00 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:811361)
+[2025-06-03 10:22:01 +0800] [810679] [ERROR] Worker (pid:811361) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:22:01 +0800] [824264] [INFO] Booting worker with pid: 824264
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:22:31 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:811359)
+[2025-06-03 10:22:32 +0800] [810679] [ERROR] Worker (pid:811359) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:22:32 +0800] [824274] [INFO] Booting worker with pid: 824274
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:23:02 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824264)
+[2025-06-03 10:23:03 +0800] [810679] [ERROR] Worker (pid:824264) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:23:03 +0800] [824285] [INFO] Booting worker with pid: 824285
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:23:33 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:811358)
+[2025-06-03 10:23:34 +0800] [810679] [ERROR] Worker (pid:811358) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:23:34 +0800] [824295] [INFO] Booting worker with pid: 824295
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:24:04 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824285)
+[2025-06-03 10:24:05 +0800] [810679] [ERROR] Worker (pid:824285) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:24:05 +0800] [824307] [INFO] Booting worker with pid: 824307
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:24:35 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824274)
+[2025-06-03 10:24:36 +0800] [810679] [ERROR] Worker (pid:824274) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:24:36 +0800] [824323] [INFO] Booting worker with pid: 824323
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:25:00 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824307)
+[2025-06-03 10:25:01 +0800] [810679] [ERROR] Worker (pid:824307) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:01 +0800] [824347] [INFO] Booting worker with pid: 824347
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:25:18 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:812298)
+[2025-06-03 10:25:19 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824323)
+[2025-06-03 10:25:19 +0800] [810679] [ERROR] Worker (pid:812298) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:19 +0800] [824357] [INFO] Booting worker with pid: 824357
+[2025-06-03 10:25:19 +0800] [810679] [ERROR] Worker (pid:824323) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:19 +0800] [824358] [INFO] Booting worker with pid: 824358
+[2025-06-03 10:25:21 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824295)
+[2025-06-03 10:25:22 +0800] [810679] [ERROR] Worker (pid:824295) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:22 +0800] [824365] [INFO] Booting worker with pid: 824365
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:25:33 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824347)
+[2025-06-03 10:25:34 +0800] [810679] [ERROR] Worker (pid:824347) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:34 +0800] [824375] [INFO] Booting worker with pid: 824375
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:25:50 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824357)
+[2025-06-03 10:25:51 +0800] [810679] [ERROR] Worker (pid:824357) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:25:51 +0800] [824393] [INFO] Booting worker with pid: 824393
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:26:04 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824365)
+[2025-06-03 10:26:05 +0800] [810679] [ERROR] Worker (pid:824365) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:26:05 +0800] [824403] [INFO] Booting worker with pid: 824403
+[2025-06-03 10:26:06 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824375)
+[2025-06-03 10:26:07 +0800] [810679] [ERROR] Worker (pid:824375) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:26:07 +0800] [824407] [INFO] Booting worker with pid: 824407
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:26:24 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824393)
+[2025-06-03 10:26:25 +0800] [810679] [ERROR] Worker (pid:824393) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:26:25 +0800] [824424] [INFO] Booting worker with pid: 824424
+[2025-06-03 10:26:35 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824358)
+[2025-06-03 10:26:36 +0800] [810679] [ERROR] Worker (pid:824358) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:26:36 +0800] [824428] [INFO] Booting worker with pid: 824428
+[2025-06-03 10:26:37 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824403)
+[2025-06-03 10:26:38 +0800] [810679] [ERROR] Worker (pid:824403) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:26:38 +0800] [824432] [INFO] Booting worker with pid: 824432
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:35:52 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824407)
+[2025-06-03 10:35:53 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824428)
+[2025-06-03 10:35:53 +0800] [810679] [ERROR] Worker (pid:824407) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:35:53 +0800] [824475] [INFO] Booting worker with pid: 824475
+[2025-06-03 10:35:53 +0800] [810679] [ERROR] Worker (pid:824428) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:35:53 +0800] [824476] [INFO] Booting worker with pid: 824476
+[2025-06-03 10:35:54 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824424)
+[2025-06-03 10:35:54 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824432)
+[2025-06-03 10:35:55 +0800] [810679] [ERROR] Worker (pid:824432) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:35:55 +0800] [810679] [ERROR] Worker (pid:824424) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:35:55 +0800] [824483] [INFO] Booting worker with pid: 824483
+[2025-06-03 10:35:55 +0800] [824484] [INFO] Booting worker with pid: 824484
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:36:24 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824475)
+[2025-06-03 10:36:24 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824476)
+[2025-06-03 10:36:25 +0800] [810679] [ERROR] Worker (pid:824476) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:36:25 +0800] [810679] [ERROR] Worker (pid:824475) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:36:25 +0800] [824503] [INFO] Booting worker with pid: 824503
+[2025-06-03 10:36:25 +0800] [824504] [INFO] Booting worker with pid: 824504
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:41:48 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824503)
+[2025-06-03 10:41:49 +0800] [810679] [ERROR] Worker (pid:824503) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:41:49 +0800] [824527] [INFO] Booting worker with pid: 824527
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:42:19 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824484)
+[2025-06-03 10:42:20 +0800] [810679] [ERROR] Worker (pid:824484) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:42:20 +0800] [824538] [INFO] Booting worker with pid: 824538
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:42:50 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824527)
+[2025-06-03 10:42:51 +0800] [810679] [ERROR] Worker (pid:824527) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:42:51 +0800] [824548] [INFO] Booting worker with pid: 824548
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:43:21 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824504)
+[2025-06-03 10:43:22 +0800] [810679] [ERROR] Worker (pid:824504) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:43:22 +0800] [824559] [INFO] Booting worker with pid: 824559
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:43:52 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824548)
+[2025-06-03 10:43:53 +0800] [810679] [ERROR] Worker (pid:824548) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:43:53 +0800] [824571] [INFO] Booting worker with pid: 824571
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:44:23 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824538)
+[2025-06-03 10:44:24 +0800] [810679] [ERROR] Worker (pid:824538) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:44:24 +0800] [824581] [INFO] Booting worker with pid: 824581
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:44:54 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824559)
+[2025-06-03 10:44:55 +0800] [810679] [ERROR] Worker (pid:824559) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:44:55 +0800] [824594] [INFO] Booting worker with pid: 824594
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:45:25 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824581)
+[2025-06-03 10:45:26 +0800] [810679] [ERROR] Worker (pid:824581) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:45:26 +0800] [824604] [INFO] Booting worker with pid: 824604
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:45:56 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824571)
+[2025-06-03 10:45:57 +0800] [810679] [ERROR] Worker (pid:824571) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:45:57 +0800] [824615] [INFO] Booting worker with pid: 824615
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:46:27 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824604)
+[2025-06-03 10:46:28 +0800] [810679] [ERROR] Worker (pid:824604) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:46:28 +0800] [824625] [INFO] Booting worker with pid: 824625
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:47:19 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824615)
+[2025-06-03 10:47:20 +0800] [810679] [ERROR] Worker (pid:824615) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:47:20 +0800] [824637] [INFO] Booting worker with pid: 824637
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:47:50 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824625)
+[2025-06-03 10:47:51 +0800] [810679] [ERROR] Worker (pid:824625) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:47:51 +0800] [824647] [INFO] Booting worker with pid: 824647
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:48:21 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824483)
+[2025-06-03 10:48:22 +0800] [810679] [ERROR] Worker (pid:824483) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:48:22 +0800] [824659] [INFO] Booting worker with pid: 824659
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:48:52 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824647)
+[2025-06-03 10:48:53 +0800] [810679] [ERROR] Worker (pid:824647) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:48:53 +0800] [824670] [INFO] Booting worker with pid: 824670
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:49:23 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824594)
+[2025-06-03 10:49:24 +0800] [810679] [ERROR] Worker (pid:824594) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:49:24 +0800] [824680] [INFO] Booting worker with pid: 824680
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:49:54 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824670)
+[2025-06-03 10:49:55 +0800] [810679] [ERROR] Worker (pid:824670) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:49:55 +0800] [824692] [INFO] Booting worker with pid: 824692
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:50:25 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824659)
+[2025-06-03 10:50:26 +0800] [810679] [ERROR] Worker (pid:824659) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:50:26 +0800] [824702] [INFO] Booting worker with pid: 824702
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:50:56 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824680)
+[2025-06-03 10:50:57 +0800] [810679] [ERROR] Worker (pid:824680) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:50:57 +0800] [824714] [INFO] Booting worker with pid: 824714
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:51:27 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824692)
+[2025-06-03 10:51:28 +0800] [810679] [ERROR] Worker (pid:824692) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:51:28 +0800] [824724] [INFO] Booting worker with pid: 824724
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-03 10:51:58 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824714)
+[2025-06-03 10:51:59 +0800] [810679] [ERROR] Worker (pid:824714) was sent SIGKILL! Perhaps out of memory?
+[2025-06-03 10:51:59 +0800] [824735] [INFO] Booting worker with pid: 824735
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-05 10:16:01 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824735)
+[2025-06-05 10:16:02 +0800] [810679] [ERROR] Worker (pid:824735) was sent SIGKILL! Perhaps out of memory?
+[2025-06-05 10:16:02 +0800] [831116] [INFO] Booting worker with pid: 831116
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-05 10:31:22 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824637)
+[2025-06-05 10:31:23 +0800] [810679] [ERROR] Worker (pid:824637) was sent SIGKILL! Perhaps out of memory?
+[2025-06-05 10:31:23 +0800] [831211] [INFO] Booting worker with pid: 831211
+[2025-06-05 10:31:43 +0800] [810679] [CRITICAL] WORKER TIMEOUT (pid:824702)
+[2025-06-05 10:31:44 +0800] [810679] [ERROR] Worker (pid:824702) was sent SIGKILL! Perhaps out of memory?
+[2025-06-05 10:31:44 +0800] [831215] [INFO] Booting worker with pid: 831215
+[2025-06-06 11:16:57 +0800] [810679] [INFO] Handling signal: term
+[2025-06-06 11:16:57 +0800] [831215] [INFO] Worker exiting (pid: 831215)
+[2025-06-06 11:16:57 +0800] [831211] [INFO] Worker exiting (pid: 831211)
+[2025-06-06 11:16:57 +0800] [831116] [INFO] Worker exiting (pid: 831116)
+[2025-06-06 11:16:57 +0800] [824724] [INFO] Worker exiting (pid: 824724)
+[2025-06-06 11:16:58 +0800] [810679] [INFO] Shutting down: Master
+[2025-06-06 11:18:17 +0800] [835240] [INFO] Starting gunicorn 23.0.0
+[2025-06-06 11:18:17 +0800] [835240] [INFO] Listening at: http://0.0.0.0:5000 (835240)
+[2025-06-06 11:18:17 +0800] [835240] [INFO] Using worker: sync
+[2025-06-06 11:18:17 +0800] [835241] [INFO] Booting worker with pid: 835241
+[2025-06-06 11:18:17 +0800] [835242] [INFO] Booting worker with pid: 835242
+[2025-06-06 11:18:17 +0800] [835243] [INFO] Booting worker with pid: 835243
+[2025-06-06 11:18:17 +0800] [835244] [INFO] Booting worker with pid: 835244
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-06 15:01:09 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835244)
+[2025-06-06 15:01:10 +0800] [835240] [ERROR] Worker (pid:835244) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:10 +0800] [835900] [INFO] Booting worker with pid: 835900
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-06 15:01:16 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835242)
+[2025-06-06 15:01:17 +0800] [835240] [ERROR] Worker (pid:835242) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:17 +0800] [835910] [INFO] Booting worker with pid: 835910
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-06 15:01:29 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835241)
+[2025-06-06 15:01:30 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835243)
+[2025-06-06 15:01:30 +0800] [835240] [ERROR] Worker (pid:835241) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:30 +0800] [835923] [INFO] Booting worker with pid: 835923
+[2025-06-06 15:01:30 +0800] [835240] [ERROR] Worker (pid:835243) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:30 +0800] [835924] [INFO] Booting worker with pid: 835924
+[2025-06-06 15:01:42 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835900)
+[2025-06-06 15:01:43 +0800] [835240] [ERROR] Worker (pid:835900) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:43 +0800] [835931] [INFO] Booting worker with pid: 835931
+[2025-06-06 15:01:49 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835910)
+[2025-06-06 15:01:50 +0800] [835240] [ERROR] Worker (pid:835910) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:01:50 +0800] [835935] [INFO] Booting worker with pid: 835935
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-06 15:02:26 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835935)
+[2025-06-06 15:02:27 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835923)
+[2025-06-06 15:02:27 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835924)
+[2025-06-06 15:02:27 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835931)
+[2025-06-06 15:02:27 +0800] [835240] [ERROR] Worker (pid:835935) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:02:27 +0800] [835964] [INFO] Booting worker with pid: 835964
+[2025-06-06 15:02:27 +0800] [835240] [ERROR] Worker (pid:835923) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:02:27 +0800] [835240] [ERROR] Worker (pid:835924) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:02:27 +0800] [835240] [ERROR] Worker (pid:835931) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:02:27 +0800] [835965] [INFO] Booting worker with pid: 835965
+[2025-06-06 15:02:27 +0800] [835966] [INFO] Booting worker with pid: 835966
+[2025-06-06 15:02:27 +0800] [835973] [INFO] Booting worker with pid: 835973
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-06 15:02:58 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:835964)
+[2025-06-06 15:02:59 +0800] [835240] [ERROR] Worker (pid:835964) was sent SIGKILL! Perhaps out of memory?
+[2025-06-06 15:02:59 +0800] [835986] [INFO] Booting worker with pid: 835986
+[2025-06-06 17:36:53 +0800] [835240] [INFO] Handling signal: hup
+[2025-06-06 17:36:53 +0800] [835240] [INFO] Hang up: Master
+[2025-06-06 17:36:53 +0800] [835240] [ERROR] Worker (pid:835986) was sent SIGHUP!
+[2025-06-06 17:36:53 +0800] [836417] [INFO] Booting worker with pid: 836417
+[2025-06-06 17:36:53 +0800] [836416] [INFO] Booting worker with pid: 836416
+[2025-06-06 17:36:53 +0800] [835240] [ERROR] Worker (pid:835966) was sent SIGHUP!
+[2025-06-06 17:36:53 +0800] [835240] [ERROR] Worker (pid:835973) was sent SIGHUP!
+[2025-06-06 17:36:53 +0800] [835240] [ERROR] Worker (pid:835965) was sent SIGHUP!
+[2025-06-06 17:36:53 +0800] [836418] [INFO] Booting worker with pid: 836418
+[2025-06-06 17:36:53 +0800] [836419] [INFO] Booting worker with pid: 836419
+[2025-06-06 18:11:48 +0800] [836416] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: ''
+[2025-06-06 18:11:48 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'RTSP/1.0'
+[2025-06-06 18:11:53 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: '\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=nnnn'
+[2025-06-06 18:12:03 +0800] [836417] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP request line: 'HELP'
+[2025-06-06 18:12:13 +0800] [836418] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'SIP/2.0'
+[2025-06-06 18:12:18 +0800] [836418] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP method: '\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03\ngoogle.com\x00PGET'
+[2025-06-06 18:12:51 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: 'cgi-bin/loadpage.cgi?user_id=1&file=../../../../../../etc/passwd HTTP/1.1'
+[2025-06-06 18:12:51 +0800] [836417] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'TRANSFER-ENCODING'
+[2025-06-06 18:12:51 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'TRANSFER-ENCODING'
+[2025-06-06 18:12:56 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'REFERER'
+[2025-06-06 18:12:58 +0800] [836419] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Header: 'REFERER'
+[2025-06-06 18:13:04 +0800] [836416] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP Version: '% base64_str HTTP/1.0'
+[2025-06-06 18:13:06 +0800] [836418] [WARNING] Invalid request from ip=192.168.31.125: Invalid HTTP header name: 'Content-Length '
+/home/rooot/py/bug_manager/utils/excel_process.py:64: PerformanceWarning: Adding/subtracting object-dtype array to TimedeltaArray not vectorized.
+  df["需要完成时间"]=df["发现日期"]+pd.to_timedelta(df["需要完成时间"],"D")
+[2025-06-11 09:59:31 +0800] [835240] [CRITICAL] WORKER TIMEOUT (pid:836416)
+[2025-06-11 09:59:32 +0800] [835240] [ERROR] Worker (pid:836416) was sent SIGKILL! Perhaps out of memory?
+[2025-06-11 09:59:32 +0800] [850639] [INFO] Booting worker with pid: 850639

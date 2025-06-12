@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Debug in Firefox",
+            "url": "http://127.0.0.1:5000",
+            "webRoot": "${workspaceFolder}",
+            "reAttach": true, // 可选：重新附加到现有 Firefox 实例
+            "firefoxExecutable": "C:/Program Files/Mozilla Firefox/firefox.exe" // 可选：指定 Firefox 路径
+        }
+    ]
+}

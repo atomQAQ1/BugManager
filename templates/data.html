@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>数据库记录查看</title>
+    <link rel="stylesheet" href="/static/css/base.css" />
+    <link rel="stylesheet" href="/static/css/data-table.css" />
+    <script src="/static/js/utils.js" type="module"></script>
+    <script src="/static/js/data-table.js" type="module"></script>
+  </head>
+  <body>
+    <div class="data-container">
+      <h1 class="main-heading">数据库记录</h1>
+      <button onclick="window.location.href='/'" class="btn btn-primary">
+        返回首页
+      </button>
+      <div class="search-container">
+        <div class="search-group">
+          <select class="search-column">
+            {% for col in columns %}
+            <option value="{{ col }}">{{ col }}</option>
+            {% endfor %}
+          </select>
+          <input type="text" class="search-value" placeholder="输入筛选值" />
+          <button class="btn btn-danger" onclick="removeSearchGroup(this)">
+            ×
+          </button>
+        </div>
+        <button onclick="addSearchGroup()">+ 添加条件</button>
+        <button onclick="applySearch()">筛选</button>
+        <button onclick="resetSearch()">重置</button>
+      </div>
+      <div class="batch-actions">
+        <select id="batch-action">
+          <option value="">选择操作</option>
+          <option value="delete">删除</option>
+          <option value="export">导出</option>
+          <option value="remind">提醒</option>
+          <option value="modify">批量修改</option>
+        </select>
+        <button onclick="applyBatchAction()">应用</button>
+        <button onclick="uploadDataFile()">上传</button>
+      </div>
+
+      <div class="data-table">
+        <table>
+          <!-- 表头部分，使用 Jinja2 动态渲染 -->
+          <thead>
+            <tr>
+              <th class="no-hover">
+                <div class="select-all-container">
+                  <input
+                    type="checkbox"
+                    id="select-all"
+                    onclick="toggleSelectAll(this)"
+                  />
+                  <select
+                    id="select-all-mode"
+                    onchange="changeSelectAllMode(this)"
+                  >
+                    <option value="page">选择当前页</option>
+                    <option value="all">选择全部数据</option>
+                  </select>
+                </div>
+              </th>
+              {% for col in columns %}
+              <th data-content="{{ col }}">{{ col }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in table_data %}
+            <tr style="height: 60px">
+              <!-- 固定行高 -->
+              <td class="no-hover">
+                <input
+                  type="checkbox"
+                  class="record-checkbox"
+                  value="{{ item._id }}"
+                />
+              </td>
+              {% for col in columns %}
+              <td
+                style="
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                "
+                data-content="{{ item[col] }}"
+              >
+                {{ item[col] }}
+              </td>
+              {% endfor %}
+              <td class="no-hover">
+                <div class="action-buttons">
+                  <button
+                    class="btn btn-primary"
+                    onclick="editRecord('{{ item._id }}')"
+                  >
+                    <i class="icon-edit"></i>
+                  </button>
+                  <button
+                    class="btn btn-danger"
+                    onclick="deleteRecord('{{ item._id }}')"
+                  >
+                    <i class="icon-delete"></i>
+                  </button>
+                  <!-- 可以继续添加更多按钮 -->
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        {% if current_page > 1 %}
+        <a
+          href="/data?{% for k,v in request.args.items() if k != 'page' %}{{k}}={{v}}{{'&' if not loop.last}}{% endfor %}&page={{ current_page - 1 }}"
+          class="page-btn"
+          >上一页</a
+        >
+        {% endif %}
+
+        <span class="page-info"
+          >第 {{ current_page }} 页 / 共 {{ total_pages }} 页</span
+        >
+
+        {% if current_page < total_pages %}
+        <a
+          href="/data?{% for k,v in request.args.items() if k != 'page' %}{{k}}={{v}}{{'&' if not loop.last}}{% endfor %}&page={{ current_page + 1 }}"
+          class="page-btn"
+          >下一页</a
+        >
+        {% endif %}
+
+        <!-- 新增的页码跳转功能 -->
+        <div class="page-jump">
+          <span>跳转到</span>
+          <input
+            type="number"
+            id="jump-to-page"
+            min="1"
+            max="{{ total_pages }}"
+            value="{{ current_page }}"
+            class="page-input"
+          />
+          <span>页</span>
+          <button onclick="jumpToPage()" class="btn btn-primary page-btn">
+            确定
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="editModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeEditModal()">&times;</span>
+        <h3>编辑记录</h3>
+        <form id="editForm" onsubmit="submitEdit(event)">
+          <div id="editFields"></div>
+          <button type="submit" class="btn btn-primary">保存修改</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="resultModal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-body" id="modalMessage"></div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" onclick="closeModal()">确定</button>
+        </div>
+      </div>
+    </div>
+    <div id="modifyModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close" onclick="closeModifyModal()">&times;</span>
+        <h3>批量修改</h3>
+        <form onsubmit="submitBatchModify(event)">
+          <div class="form-group">
+            <label>选择列名：</label>
+            <select id="modifyColumn" class="form-control">
+              {% for col in columns if col not in ['_id'] %}
+              <option value="{{ col }}">{{ col }}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group">
+            <label>修改后的值：</label>
+            <input type="text" id="modifyValue" class="form-control" required />
+          </div>
+          <button type="submit" class="btn btn-primary">确认修改</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // 页码跳转功能
+      function jumpToPage() {
+          const pageInput = document.getElementById('jump-to-page');
+          const targetPage = parseInt(pageInput.value);
+
+          // 验证页码有效性
+          if (isNaN(targetPage) || targetPage < 1 || targetPage > {{ total_pages }}) {
+              showResultModal('请输入有效的页码 (1 - {{ total_pages }})');
+              return;
+          }
+
+          // 构建跳转URL，保留当前的查询参数
+          const params = new URLSearchParams(window.location.search);
+          params.set('page', targetPage);
+
+          // 跳转到指定页面
+          window.location.href = `/data?${params.toString()}`;
+      };
+
+      // 支持按回车键触发跳转
+      document.getElementById('jump-to-page').addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+              jumpToPage();
+          }
+      });
+    </script>
+  </body>
+</html>

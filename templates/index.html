@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漏洞信息管理系统</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/file-manager.css">
+    <script src="/static/js/utils.js" type="module"></script>
+    <script src="/static/js/file-manager.js" type="module"></script>
+</head>
+<h1 class="main-heading">漏洞扫描文件管理</h1>
+<body>
+    <!-- 在容器内添加文件管理部分 -->
+    <div class="file-section">
+        
+        <!-- 切换文件夹按钮 -->
+        <div class="switch box">
+            <button type="button" class="btn btn-switch" onclick="switchFileList()">切换文件夹</button>
+            <button onclick="window.location.href='/data'" class="btn btn-info">数据查看</button>
+        </div>
+        <div class="operation-box">
+            
+            <!--文件操作按钮-->
+            <button type="button" class="btn operation-btn" onclick="whetherInWhite()">白名单判别</button>
+        </div>
+        <!-- 上传表单 -->
+        <div class="upload-box">
+            <form id="uploadForm">
+                <!-- 文件选择输入框，设置为隐藏 -->
+                <input type="file" id="fileInput" name="file" hidden>
+                <!-- 文件选择标签 -->
+                <label for="fileInput" class="upload-btn">
+                    <span>选择文件</span>
+                </label>
+                <!-- 上传文件按钮 -->
+                <button type="button" class="btn btn-primary" onclick="uploadFile()">上传文件</button>
+                <!-- 显示选择的文件名 -->
+                <span id="fileName"></span>
+            </form>
+            <!-- 上传进度条，初始隐藏 -->
+            <div class="progress" style="display: none;">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- 文件列表 -->
+        <div class="file-list">
+            <!-- 文件列表头部 -->
+            <div class="file-header">
+                <span>文件名</span>
+                <span>大小</span>
+                <span>上传时间</span>
+                <span>操作</span>
+            </div>
+            <!-- 循环渲染文件列表 -->
+            {% for file in files %}
+            <div class="file-item">
+                <!-- 文件名 -->
+                <span class="file-name">{{ file.name }}</span>
+                <!-- 文件大小，转换为 KB 并保留两位小数 -->
+                <span class="file-size">{{ (file.size/1024)|round(2) }} KB</span>
+                <!-- 文件上传时间 -->
+                <span class="file-time">{{ file.upload_time }}</span>
+                <!-- 文件操作按钮 -->
+                <div class="file-actions">
+                    <!-- 下载文件按钮 -->
+                    <button class="btn btn-success" 
+                            onclick="downloadFile('{{ file.name }}')">下载</button>
+                    <!-- 删除文件按钮 -->
+                    <!-- 修改删除按钮（约190行） -->
+                    <button class="btn btn-danger" 
+                            onclick="deleteFile('{{ file.name }}', event)">删除</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- 弹窗结构模板 -->
+<div class="modal" id="resultModal">
+    <div class="modal-content">
+        <div class="modal-body" id="modalMessage"></div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" onclick="closeModal()">确定</button>
+        </div>
+    </div>
+</div>
+    
+</body>
+
+</html>
